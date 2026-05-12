@@ -75,6 +75,118 @@
   transform: translateY(-3px);
 }
 
+/* ── Footer Contact Banner ─────────────────────────────── */
+.footer-contact-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(255, 255, 255, 0.05));
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  margin-bottom: 3rem;
+  backdrop-filter: blur(10px);
+}
+
+.footer-contact-text h3 {
+  color: white;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.footer-contact-text p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.95rem;
+}
+
+.footer-contact-links {
+  display: flex;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.footer-contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.9rem 1.5rem;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  min-width: 180px;
+}
+
+.footer-contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.footer-contact-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.label-small {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.label-main {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+/* Call button — gold */
+.call-btn {
+  background: rgba(212, 175, 55, 0.15);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  color: #f0d060;
+}
+
+.call-btn .footer-contact-icon {
+  background: rgba(212, 175, 55, 0.2);
+  color: #f0d060;
+}
+
+.call-btn:hover {
+  background: rgba(212, 175, 55, 0.28);
+  box-shadow: 0 8px 28px rgba(212, 175, 55, 0.3);
+  transform: translateY(-3px);
+  color: #ffe57a;
+}
+
+/* WhatsApp button — green */
+.whatsapp-btn {
+  background: rgba(37, 211, 102, 0.12);
+  border: 1px solid rgba(37, 211, 102, 0.3);
+  color: #4fdc88;
+}
+
+.whatsapp-btn .footer-contact-icon {
+  background: rgba(37, 211, 102, 0.15);
+  color: #25d366;
+}
+
+.whatsapp-btn:hover {
+  background: rgba(37, 211, 102, 0.22);
+  box-shadow: 0 8px 28px rgba(37, 211, 102, 0.25);
+  transform: translateY(-3px);
+  color: #7feaaa;
+}
+
+/* ── Footer Bottom ─────────────────────────────── */
 .footer-bottom {
   text-align: center;
   padding-top: 2rem;
@@ -82,9 +194,35 @@
   font-size: 0.875rem;
 }
 
+@media (max-width: 900px) {
+  .footer-contact-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.75rem;
+  }
+
+  .footer-contact-links {
+    width: 100%;
+  }
+
+  .footer-contact-btn {
+    flex: 1;
+    min-width: 0;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 768px) {
   .footer-content {
     grid-template-columns: 1fr;
     gap: 2.5rem;
+  }
+
+  .footer-contact-links {
+    flex-direction: column;
+  }
+
+  .footer-contact-btn {
+    justify-content: flex-start;
   }
 }

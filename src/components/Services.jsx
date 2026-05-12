@@ -122,7 +122,6 @@ const Services = () => {
             >
               <div className="service-image-container">
                 <img src={service.image} alt={service.title} className="service-image" />
-                <div className="service-icon-overlay">{service.icon}</div>
               </div>
               <div className="service-content">
                 <h3 className="service-title">{service.title}</h3>

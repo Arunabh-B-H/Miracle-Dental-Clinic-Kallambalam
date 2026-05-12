@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ownerImg from '../assets/Owner.png';
+import cofounderImg from '../assets/cofounder.png';
 import './Founder.css';
 
 const Founder = () => {
@@ -59,6 +60,35 @@ const Founder = () => {
             </div>
           </motion.div>
         </div>
+
+        {/* Co-Founder */}
+        <motion.div
+          className="cofounder-section"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.7 }}
+        >
+          <div className="cofounder-divider">
+            <span>Meet Our Co-Founder</span>
+          </div>
+
+          <div className="cofounder-card">
+            <div className="cofounder-image-wrapper">
+              <img src={cofounderImg} alt="Dr. Arya Dhanush" className="cofounder-image" />
+            </div>
+            <div className="cofounder-content">
+              <h3 className="cofounder-name">Dr. Arya Dhanush</h3>
+              <p className="cofounder-title">Co-Founder & Dental Consultant</p>
+              <p className="cofounder-bio">
+                Dr. Arya Dhanush brings a unique blend of precision, empathy, and clinical excellence to Miracle Dental & Cosmetic Clinic. With a deep passion for patient wellness and a keen eye for aesthetic detail, she plays a vital role in elevating the quality of care at the clinic. Dr. Arya specializes in conservative dentistry and patient care protocols, ensuring every patient feels comfortable, informed, and cared for throughout their treatment journey.
+              </p>
+              <p className="cofounder-bio">
+                Her warm and approachable nature has made her a trusted figure among patients of all ages — from children to seniors — and her dedication to gentle, personalized dental care reflects in every smile she helps create.
+              </p>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

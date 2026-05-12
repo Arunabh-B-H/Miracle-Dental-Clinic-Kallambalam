@@ -13,6 +13,7 @@
   position: relative;
   border-radius: 20px;
   overflow: hidden;
+  max-width: 420px;
 }
 
 .image-decoration {
@@ -31,11 +32,11 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  height: auto;
+  height: 500px;
   border-radius: 20px;
   box-shadow: var(--shadow-lg);
   object-fit: cover;
-  aspect-ratio: 3/4;
+  object-position: top center;
 }
 
 .founder-name {
@@ -95,6 +96,102 @@
   font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+/* Co-Founder Section */
+.cofounder-section {
+  margin-top: 5rem;
+}
+
+.cofounder-divider {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.cofounder-divider::before,
+.cofounder-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-secondary), transparent);
+}
+
+.cofounder-divider span {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--color-secondary);
+  font-style: italic;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}
+
+.cofounder-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  background: rgba(212, 175, 55, 0.04);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  border-radius: 24px;
+  padding: 2.5rem 3rem;
+}
+
+.cofounder-image-wrapper {
+  flex-shrink: 0;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--color-secondary);
+  box-shadow: 0 8px 30px rgba(212, 175, 55, 0.2);
+}
+
+.cofounder-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.cofounder-content {
+  flex: 1;
+}
+
+.cofounder-name {
+  font-size: 1.75rem;
+  color: var(--color-primary);
+  margin-bottom: 0.4rem;
+}
+
+.cofounder-title {
+  color: var(--color-secondary);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  margin-bottom: 1.25rem;
+}
+
+.cofounder-bio {
+  color: var(--color-text-light);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.cofounder-bio:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .cofounder-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 992px) {

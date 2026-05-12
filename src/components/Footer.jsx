@@ -16,6 +16,7 @@ const InstagramIcon = () => (
   </svg>
 );
 
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -53,6 +54,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
 
         <div className="footer-bottom">
           <p>&copy; {new Date().getFullYear()} Miracle Dental Clinic. All rights reserved.</p>
