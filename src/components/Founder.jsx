@@ -16,8 +16,8 @@ const Founder = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
           >
-            <div className="image-decoration"></div>
-            <img src={ownerImg} alt="Founder of Miracle Dental" className="founder-image" />
+            <div className="image-decoration" aria-hidden="true"></div>
+            <img src={ownerImg} alt="Dr. Dhanush Shaji, Founder of Miracle Dental Clinic" className="founder-image" loading="eager" width="460" height="560" />
           </motion.div>
 
           <motion.div
@@ -75,7 +75,7 @@ const Founder = () => {
 
           <div className="cofounder-card">
             <div className="cofounder-image-wrapper">
-              <img src={cofounderImg} alt="Dr. Arya Dhanush" className="cofounder-image" />
+              <img src={cofounderImg} alt="Dr. Arya Dhanush, Co-Founder of Miracle Dental Clinic" className="cofounder-image" loading="lazy" width="180" height="180" />
             </div>
             <div className="cofounder-content">
               <h3 className="cofounder-name">Dr. Arya Dhanush</h3>

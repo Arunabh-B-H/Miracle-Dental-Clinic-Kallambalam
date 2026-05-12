@@ -25,8 +25,8 @@ const ContactLocation = () => {
             </p>
             
             <div className="contact-cards">
-              <a href="tel:+1234567890" className="contact-card call glass">
-                <div className="icon-wrapper">
+              <a href="tel:+919447779074" className="contact-card call glass" aria-label="Call Miracle Dental Clinic">
+                <div className="icon-wrapper" aria-hidden="true">
                   <Phone size={24} />
                 </div>
                 <div className="card-content">
@@ -35,8 +35,8 @@ const ContactLocation = () => {
                 </div>
               </a>
               
-              <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="contact-card whatsapp glass">
-                <div className="icon-wrapper">
+              <a href="https://wa.me/919447779074" target="_blank" rel="noopener noreferrer" className="contact-card whatsapp glass" aria-label="Chat with Miracle Dental Clinic on WhatsApp">
+                <div className="icon-wrapper" aria-hidden="true">
                   <MessageCircle size={24} />
                 </div>
                 <div className="card-content">
@@ -66,7 +66,7 @@ const ContactLocation = () => {
           >
             <div className="map-wrapper glass">
               <div className="map-header">
-                <MapPin size={24} className="pin-icon" />
+                <MapPin size={24} className="pin-icon" aria-hidden="true" />
                 <h3>Visit Our Clinic</h3>
               </div>
               
@@ -89,8 +89,9 @@ const ContactLocation = () => {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="btn btn-primary btn-block map-btn"
+                  aria-label="Get directions to Miracle Dental Clinic on Google Maps"
                 >
-                  <Navigation size={18} style={{ marginRight: '8px' }} />
+                  <Navigation size={18} style={{ marginRight: '8px' }} aria-hidden="true" />
                   Get Directions
                 </a>
               </div>

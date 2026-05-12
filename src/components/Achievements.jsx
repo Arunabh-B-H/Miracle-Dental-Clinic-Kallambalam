@@ -53,7 +53,7 @@ const Achievements = () => {
               whileHover={{ y: -10 }}
             >
               <div className="achievement-image-container">
-                <img src={achievement.image} alt={achievement.title} className="achievement-image" />
+                <img src={achievement.image} alt={achievement.title} className="achievement-image" loading="lazy" width="400" height="240" />
               </div>
               <div className="achievement-content">
                 <h3 className="achievement-title">{achievement.title}</h3>

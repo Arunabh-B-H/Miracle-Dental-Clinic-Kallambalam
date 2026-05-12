@@ -53,13 +53,13 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 0.5 }}
           >
-            <a href="#contact" className="btn btn-primary">
-              <Calendar size={18} style={{ marginRight: '8px' }} />
+            <a href="#contact" className="btn btn-primary" aria-label="Book a dental consultation">
+              <Calendar size={18} style={{ marginRight: '8px' }} aria-hidden="true" />
               Book Consultation
             </a>
-            <a href="#services" className="btn btn-outline">
+            <a href="#services" className="btn btn-outline" aria-label="Explore our dental services">
               Explore Services
-              <ArrowRight size={18} style={{ marginLeft: '8px' }} />
+              <ArrowRight size={18} style={{ marginLeft: '8px' }} aria-hidden="true" />
             </a>
           </motion.div>
         </motion.div>

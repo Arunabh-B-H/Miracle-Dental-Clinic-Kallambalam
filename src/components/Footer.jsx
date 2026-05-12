@@ -23,8 +23,8 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-brand">
-            <a href="#home" className="footer-logo-link">
-              <img src={logoImg} alt="Miracle Dental Clinic" className="footer-logo" />
+            <a href="#home" className="footer-logo-link" aria-label="Back to top – Miracle Dental & Cosmetic Clinic">
+              <img src={logoImg} alt="Miracle Dental & Cosmetic Clinic logo" className="footer-logo" loading="lazy" width="260" height="130" />
             </a>
             <p className="footer-desc">
               Premium dental and cosmetic care. Crafting confident smiles with precision, artistry, and advanced technology.
@@ -45,10 +45,10 @@ const Footer = () => {
           <div className="footer-social">
             <h4>Connect With Us</h4>
             <div className="social-icons">
-              <a href="https://www.facebook.com/profile.php?id=61559107175077" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <a href="https://www.facebook.com/profile.php?id=61559107175077" target="_blank" rel="noopener noreferrer" aria-label="Visit Miracle Dental on Facebook">
                 <FacebookIcon />
               </a>
-              <a href="https://www.instagram.com/miracledentaltvm/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <a href="https://www.instagram.com/miracledentaltvm/" target="_blank" rel="noopener noreferrer" aria-label="Visit Miracle Dental on Instagram">
                 <InstagramIcon />
               </a>
             </div>

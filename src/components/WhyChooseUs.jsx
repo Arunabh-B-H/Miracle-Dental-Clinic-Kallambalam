@@ -30,8 +30,11 @@ const WhyChooseUs = () => {
             <div className="wcu-image-container">
               <img 
                 src={treatmentFacilityImg} 
-                alt="Miracle Dental Clinic Treatment Facility" 
+                alt="Miracle Dental Clinic modern treatment facility in Kallambalam, Kerala" 
                 className="wcu-image"
+                loading="lazy"
+                width="600"
+                height="450"
               />
               <div className="wcu-image-overlay"></div>
             </div>
@@ -61,7 +64,7 @@ const WhyChooseUs = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                 >
-                  <CheckCircle2 className="wcu-check-icon" />
+                  <CheckCircle2 className="wcu-check-icon" aria-hidden="true" />
                   <span>{reason}</span>
                 </motion.li>
               ))}

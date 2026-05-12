@@ -30,7 +30,7 @@ const Crew = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <img src={crewImg} alt="Miracle Dental Crew" className="crew-image" />
+          <img src={crewImg} alt="The dedicated dental team at Miracle Dental & Cosmetic Clinic" className="crew-image" loading="lazy" width="1200" height="600" />
           <div className="crew-overlay">
             <div className="crew-overlay-content">
               <h3>United by Excellence</h3>
