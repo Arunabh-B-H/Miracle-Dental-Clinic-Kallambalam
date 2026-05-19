@@ -25,7 +25,7 @@ const ContactLocation = () => {
             </p>
             
             <div className="contact-cards">
-              <a href="tel:+919447779074" className="contact-card call glass" aria-label="Call Miracle Dental Clinic">
+              <a href="tel:09633560023" className="contact-card call glass" aria-label="Call Miracle Dental Clinic">
                 <div className="icon-wrapper" aria-hidden="true">
                   <Phone size={24} />
                 </div>
@@ -35,7 +35,7 @@ const ContactLocation = () => {
                 </div>
               </a>
               
-              <a href="https://wa.me/919447779074" target="_blank" rel="noopener noreferrer" className="contact-card whatsapp glass" aria-label="Chat with Miracle Dental Clinic on WhatsApp">
+              <a href="https://wa.me/919633560023" target="_blank" rel="noopener noreferrer" className="contact-card whatsapp glass" aria-label="Chat with Miracle Dental Clinic on WhatsApp">
                 <div className="icon-wrapper" aria-hidden="true">
                   <MessageCircle size={24} />
                 </div>

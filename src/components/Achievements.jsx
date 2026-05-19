@@ -3,14 +3,15 @@ import { motion } from 'framer-motion';
 import achievement1 from '../assets/achievement_1.png';
 import achievement2 from '../assets/achievement_2.png';
 import achievement3 from '../assets/treatment_facility.jpeg';
+import achievementNew from '../assets/achievement_new.jpeg';
 import './Achievements.css';
 
 const achievementsList = [
   {
     id: 1,
-    title: 'Award-Winning Clinic',
-    description: 'Recognized as the best dental clinic in the region for our excellence in patient care and advanced procedures.',
-    image: achievement1,
+    title: 'Excellence in Dentistry',
+    description: 'Recognized for our unwavering commitment to clinical excellence and compassionate patient care.',
+    image: achievementNew,
   },
   {
     id: 2,
@@ -23,7 +24,8 @@ const achievementsList = [
     title: 'Advanced Technology',
     description: 'Equipped with state-of-the-art dental technology to ensure precise, painless, and effective treatments.',
     image: achievement3,
-  }
+  },
+
 ];
 
 const Achievements = () => {
@@ -43,7 +45,7 @@ const Achievements = () => {
 
         <div className="achievements-grid">
           {achievementsList.map((achievement, index) => (
-            <motion.div 
+            <motion.div
               key={achievement.id}
               className="achievement-card glass"
               initial={{ opacity: 0, y: 30 }}

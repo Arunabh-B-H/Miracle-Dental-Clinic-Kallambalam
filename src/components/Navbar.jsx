@@ -79,7 +79,7 @@ const Navbar = () => {
                 </li>
               ))}
               <li>
-                <a href="tel:+1234567890" className="btn btn-primary" style={{ width: '100%', marginTop: '1rem' }}>
+                <a href="tel:09633560023" className="btn btn-primary" style={{ width: '100%', marginTop: '1rem' }}>
                   <Phone size={18} style={{ marginRight: '8px' }} />
                   Book Now
                 </a>

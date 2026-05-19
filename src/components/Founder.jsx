@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ownerImg from '../assets/Owner.png';
-import cofounderImg from '../assets/cofounder.png';
+import cofounderImg from '../assets/arya.jpeg';
 import './Founder.css';
 
 const Founder = () => {
