@@ -75,16 +75,16 @@ const Founder = () => {
 
           <div className="cofounder-card">
             <div className="cofounder-image-wrapper">
-              <img src={cofounderImg} alt="Dr. Arya Dhanush, Co-Founder of Miracle Dental Clinic" className="cofounder-image" loading="lazy" width="180" height="180" />
+              <img src={cofounderImg} alt="Dr. Arya Arun, Co-Founder & Specialist in Oral & Maxillofacial Surgery and Facial Aesthetics at Miracle Dental Clinic" className="cofounder-image" loading="lazy" width="180" height="180" />
             </div>
             <div className="cofounder-content">
-              <h3 className="cofounder-name">Dr. Arya Dhanush</h3>
-              <p className="cofounder-title">Co-Founder & Dental Consultant</p>
+              <h3 className="cofounder-name">Dr. Arya Arun</h3>
+              <p className="cofounder-title">Co-Founder • Oral & Maxillofacial Surgery & Facial Aesthetics</p>
               <p className="cofounder-bio">
-                Dr. Arya Dhanush brings a unique blend of precision, empathy, and clinical excellence to Miracle Dental & Cosmetic Clinic. With a deep passion for patient wellness and a keen eye for aesthetic detail, she plays a vital role in elevating the quality of care at the clinic. Dr. Arya specializes in conservative dentistry and patient care protocols, ensuring every patient feels comfortable, informed, and cared for throughout their treatment journey.
+                Dr. Arya Arun brings a unique blend of surgical precision, aesthetic artistry, and clinical excellence to Miracle Dental & Cosmetic Clinic. Specialized in Oral and Maxillofacial Surgery and Facial Aesthetics, she provides advanced surgical care and delicate facial aesthetic procedures, with a keen eye for harmony, symmetry, and natural-looking results.
               </p>
               <p className="cofounder-bio">
-                Her warm and approachable nature has made her a trusted figure among patients of all ages — from children to seniors — and her dedication to gentle, personalized dental care reflects in every smile she helps create.
+                Her compassionate approach and dedication to personalized care ensure every patient feels comfortable, informed, and confident throughout their treatment journey — from complex oral and maxillofacial procedures to refined facial aesthetic enhancements.
               </p>
             </div>
           </div>
